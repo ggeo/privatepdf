@@ -19,9 +19,9 @@
 
 | Platform | Download |
 |----------|----------|
-| **Windows** | [PrivatePDF_1.0.0_x64-setup.exe](https://github.com/ggeo/privatepdf_personal/releases/latest) |
-| **Linux (Debian/Ubuntu)** | [PrivatePDF_1.0.0_amd64.deb](https://github.com/ggeo/privatepdf_personal/releases/latest) |
-| **Linux (Fedora/RHEL)** | [PrivatePDF_1.0.0_x86_64.rpm](https://github.com/ggeo/privatepdf_personal/releases/latest) |
+| **Windows** | [PrivatePDF_1.0.0_x64-setup.exe](https://github.com/ggeo/privatepdf/releases/latest) |
+| **Linux (Debian/Ubuntu)** | [PrivatePDF_1.0.0_amd64.deb](https://github.com/ggeo/privatepdf/releases/latest) |
+| **Linux (Fedora/RHEL)** | [PrivatePDF_1.0.0_x86_64.rpm](https://github.com/ggeo/privatepdf/releases/latest) |
 
 ## Quick Start
 
@@ -76,8 +76,8 @@ Your documents never leave your computer:
 
 ```bash
 # Clone the repository
-git clone https://github.com/ggeo/privatepdf_personal.git
-cd privatepdf_personal
+git clone https://github.com/ggeo/privatepdf.git
+cd privatepdf
 
 # Install dependencies
 bun install
