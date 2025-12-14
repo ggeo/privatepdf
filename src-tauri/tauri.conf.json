@@ -1,0 +1,81 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "PrivatePDF",
+  "version": "1.0.0",
+  "identifier": "com.privatepdf.desktop",
+  "build": {
+    "frontendDist": "../out",
+    "devUrl": "http://localhost:3000/privatepdf",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "node scripts/tauri-build.js"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "PrivatePDF - Local AI Chat",
+        "width": 1400,
+        "height": 900,
+        "minWidth": 1024,
+        "minHeight": 768,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": true,
+        "transparent": false
+      }
+    ],
+    "security": {
+      "csp": null,
+      "capabilities": ["default"]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "fileAssociations": [
+      {
+        "ext": ["pdf"],
+        "name": "PDF Document",
+        "description": "Portable Document Format",
+        "role": "Viewer",
+        "mimeType": "application/pdf"
+      },
+      {
+        "ext": ["doc", "docx"],
+        "name": "Word Document",
+        "description": "Microsoft Word Document",
+        "role": "Viewer",
+        "mimeType": "application/msword"
+      }
+    ],
+    "macOS": {
+      "hardenedRuntime": true,
+      "entitlements": "build/macos/entitlements.plist",
+      "exceptionDomain": "localhost"
+    },
+    "windows": {
+      "nsis": {
+        "installerHooks": "./windows/hooks.nsh"
+      }
+    }
+  },
+  "plugins": {
+    "shell": {
+      "open": true
+    },
+    "updater": {
+      "active": true,
+      "endpoints": [
+        "https://github.com/YOUR_USERNAME/privatepdf/releases/latest/download/latest.json"
+      ],
+      "dialog": true,
+      "pubkey": "YOUR_PUBLIC_KEY_HERE"
+    }
+  }
+}

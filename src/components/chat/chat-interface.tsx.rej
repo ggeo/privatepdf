@@ -1,0 +1,16 @@
+--- src/components/chat/chat-interface.tsx
++++ src/components/chat/chat-interface.tsx
+@@ -297,11 +297,10 @@
+       {/* Ollama Setup Modal (when Ollama is not running) */}
+       <OllamaSetupModal
+         isOpen={showSetupModal}
+-        onClose={() => setShowSetupModal(false)}
+-        onReady={() => {
++        onClose={() => {
+           setShowSetupModal(false);
+           // Re-check status after setup
+           ollamaMonitor.checkNow();
+-        }}
++        }}
+       />
+ 

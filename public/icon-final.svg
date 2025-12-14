@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9333EA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" fill="url(#bgGrad)"/>
+
+  <!-- Shield Icon in white -->
+  <g transform="translate(256, 256)">
+    <path d="M 0 -120 C -40 -120 -70 -130 -85 -140 C -90 -145 -95 -145 -100 -140 C -115 -130 -145 -120 -185 -120 C -195 -120 -205 -110 -205 -100 L -205 0 C -205 100 -140 150 -10 185 C -5 187 0 187 5 185 C 135 150 205 100 205 0 L 205 -100 C 205 -110 195 -120 185 -120 C 145 -120 115 -130 100 -140 C 95 -145 90 -145 85 -140 C 70 -130 40 -120 0 -120 Z"
+          fill="white"
+          opacity="0.95"/>
+  </g>
+</svg>

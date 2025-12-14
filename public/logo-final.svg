@@ -1,0 +1,20 @@
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9333EA;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Shield Icon with gradient fill -->
+  <g transform="translate(60, 100)">
+    <path d="M 0 -50 C -25 -50 -40 -55 -45 -60 C -47 -62 -49 -62 -51 -60 C -56 -55 -71 -50 -96 -50 C -100 -50 -104 -46 -104 -42 L -104 8 C -104 58 -71 88 -4 110 C -2 111 0 111 2 110 C 69 88 104 58 104 8 L 104 -42 C 104 -46 100 -50 96 -50 C 71 -50 56 -55 51 -60 C 49 -62 47 -62 45 -60 C 40 -55 25 -50 0 -50 Z"
+          fill="url(#shieldGradient)"
+          transform="scale(0.45)"/>
+  </g>
+
+  <!-- PrivatePDF Text -->
+  <text x="140" y="120" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="bold" fill="#111827">
+    PrivatePDF
+  </text>
+</svg>
